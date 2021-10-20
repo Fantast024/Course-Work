@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DFFEFC;" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TextArea editable="false" mouseTransparent="true" style="-fx-background-color: #DFFEFC;" text="Перед использованием программы следует загрузить текстовые файлы,&#10;которые необходимо обработать, помещаем в проекте в пакет testFiles.&#10;В приложении загржаем файл, введя в текстовое поле название текстового&#10;файла с расширением и нажав на кнопку &quot;Загрузить файл&quot; . Когда текст&#10;отобразиться в приложении, нажимаем кнопку &quot;Запустить&quot; и ждем результат.&#10;&#10;&#10;Проект работает на Java SDK v1.8 и Maven 3 v3.6.3 , плагин ANTLR4 v4.9.2&#10;">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+   </children>
+</VBox>

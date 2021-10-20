@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" style="-fx-background-color: #F5ECEC;" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <TextFlow fx:id="fieldCode" prefHeight="200.0" prefWidth="200.0" style="-fx-border-width: 5; -fx-border-color: #FFD800; -fx-background-color: #DFFEFC;">
+         <padding>
+            <Insets left="20.0" />
+         </padding></TextFlow>
+      <HBox alignment="CENTER" prefHeight="79.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="79.0" prefWidth="178.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="nameFileField" alignment="CENTER" maxHeight="20.0" maxWidth="150.0" style="-fx-background-color: #F7F4F4;" text="TestCode.myJava" />
+                  <Label text="Введите название файла">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#loadFile" text="Загрузить файл" />
+            <Button mnemonicParsing="false" onAction="#runCode" text="Запустить">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <TextFlow fx:id="fieldResult" prefHeight="200.0" prefWidth="200.0" style="-fx-border-width: 5; -fx-border-color: #FFD800; -fx-background-color: #DFFEFC;">
+         <padding>
+            <Insets left="20.0" />
+         </padding></TextFlow>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#helpMessage" text="Справка" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
